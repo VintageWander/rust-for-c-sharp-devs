@@ -1,0 +1,26 @@
+[package]
+name = "rust-for-c-sharp-devs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.21.2", features = ["full"] }
+serde = { version = "1.0.147", features = ["derive"] }
+serde_json = "1.0.88"
+thiserror = "1.0.37"
+salvo = { version = "0.37.4", features = ["affix", "size-limiter"] }
+validator = { version = "0.16.0", features = ["derive"] }
+fancy-regex = "0.10.0"
+mongodb = { version = "2.3.1", features = ["bson-uuid-0_8", "bson-serde_with"] }
+uuid = { version = "1.2.2", features = [
+	"v4",
+	"fast-rng",
+	"macro-diagnostics",
+	"serde",
+] }
+async-trait = "0.1.58"
+futures = "0.3.25"
+dotenv = "0.15.0"
+bson = { version = "2.4.0", features = ["uuid-0_8"] }
